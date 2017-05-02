@@ -1,3 +1,3 @@
 #!/bin/bash
 
-find . -type d -name metasploit -exec rename -n 's/metasploit/amo/' {} +
+find . -iname "*metasploit*" -exec rename -n 's/[Mm]etasploit/amo/' {} +
